@@ -24,7 +24,7 @@ function displayResult(enteredText,verdict) {
 
 function checkPalindrome(event) {
     event.preventDefault();
-    const enteredText = inputText.value;
+    const enteredText = inputText.value.toLowerCase();
     let i = 0, j = enteredText.length-1, flag = true;
     while(i<j) {
         if(enteredText.charAt(i) !== enteredText.charAt(j)) {
