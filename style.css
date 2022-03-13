@@ -1,0 +1,71 @@
+body {
+  background-image: url("./images/background-img.jpg");
+  background-size: cover;
+  margin: 0;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  border-radius: 8px;
+}
+
+.container .result {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+}
+
+.not-palindrome {
+  color: rgb(255, 202, 202);
+}
+
+.is-palindrome {
+  color: rgb(192, 243, 192);
+}
+
+.container form {
+  padding-top: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.container form .input-text {
+  border: none;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: white;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.container form .input-text:focus {
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.container form .check-button {
+  width: 80px;
+  height: 40px;
+  margin-left: 30px;
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  cursor: pointer;
+}
